@@ -48,7 +48,7 @@ for t = 1:length(time)
     end
 end
 
-figure('Name', 'Filtr Complementarny');
+figure('Name', 'Filtr Complementarny K=0.995');
 hold on;
 plot(time, Alpha, 'r');
 plot(time, Beta, 'g');
