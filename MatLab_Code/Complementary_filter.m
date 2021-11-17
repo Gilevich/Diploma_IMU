@@ -10,9 +10,9 @@ plot(time, Gyroscope(:,1), 'r');
 plot(time, Gyroscope(:,2), 'g');
 plot(time, Gyroscope(:,3), 'b');
 legend('X', 'Y', 'Z');
-xlabel('Time (s)');
-ylabel('Angular rate (deg/s)');
-title('Gyroscope');
+xlabel('Czas (s)');
+ylabel('Prędkość kątowa(deg/s)');
+title('Żyroskop');
 hold off;
 axis(2) = subplot(2,1,2);
 hold on;
@@ -20,16 +20,16 @@ plot(time, Accelerometer(:,1), 'r');
 plot(time, Accelerometer(:,2), 'g');
 plot(time, Accelerometer(:,3), 'b');
 legend('X', 'Y', 'Z');
-xlabel('Time (s)');
-ylabel('Acceleration (g)');
-title('Accelerometer');
+xlabel('Czas (s)');
+ylabel('Przyspieszenie (g)');
+title('Akcelerometr');
 hold off;
 
-K = 0.995;
+K = 0.9998;
 
-Ax = atan(Accelerometer(:,1)./(sqrt(Accelerometer(:,2).^2 + Accelerometer(:,3).^2)));
-Ay = atan(Accelerometer(:,2)./(sqrt(Accelerometer(:,1).^2 + Accelerometer(:,3).^2)));
-Az = atan(Accelerometer(:,3)./(sqrt(Accelerometer(:,1).^2 + Accelerometer(:,2).^2)));
+Ax = (180/pi) * atan(Accelerometer(:,1)./(sqrt(Accelerometer(:,2).^2 + Accelerometer(:,3).^2)));
+Ay = (180/pi) * atan(Accelerometer(:,2)./(sqrt(Accelerometer(:,1).^2 + Accelerometer(:,3).^2)));
+Az = (180/pi) * atan(Accelerometer(:,3)./(sqrt(Accelerometer(:,1).^2 + Accelerometer(:,2).^2)));
 
 Alpha = zeros(size(Gyroscope(:,1)));
 Beta = zeros(size(Gyroscope(:,2)));
@@ -48,13 +48,13 @@ for t = 1:length(time)
     end
 end
 
-figure('Name', 'Filtr Complementarny K=0.995');
+figure('Name', 'Filtr Komplementarny');
 hold on;
 plot(time, Alpha, 'r');
 plot(time, Beta, 'g');
 plot(time, Gamma, 'b');
-title('Filtr Complementarny');
-xlabel('Time (s)');
-ylabel('Angle (deg)');
+title('Filtr Komplementarny');
+xlabel('Czas (s)');
+ylabel('Kąt (deg)');
 legend('Alpha', 'Beta', 'Gamma');
 hold off;

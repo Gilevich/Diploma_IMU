@@ -4,9 +4,13 @@ clc;
 
 load('ExampleData.mat')
 
-Ax = atan(Accelerometer(:,1)./(sqrt(Accelerometer(:,2).^2 + Accelerometer(:,3).^2)));
-Ay = atan(Accelerometer(:,2)./(sqrt(Accelerometer(:,1).^2 + Accelerometer(:,3).^2)));
-Az = atan(Accelerometer(:,3)./(sqrt(Accelerometer(:,1).^2 + Accelerometer(:,2).^2)));
+% Ax = atan(Accelerometer(:,1)./(sqrt(Accelerometer(:,2).^2 + Accelerometer(:,3).^2)));
+% Ay = atan(Accelerometer(:,2)./(sqrt(Accelerometer(:,1).^2 + Accelerometer(:,3).^2)));
+% Az = atan(Accelerometer(:,3)./(sqrt(Accelerometer(:,1).^2 + Accelerometer(:,2).^2)));
+
+Ax = (180/pi) * atan(Accelerometer(:,1)./(sqrt(Accelerometer(:,2).^2 + Accelerometer(:,3).^2)));
+Ay = (180/pi) * atan(Accelerometer(:,2)./(sqrt(Accelerometer(:,1).^2 + Accelerometer(:,3).^2)));
+Az = (180/pi) * atan(Accelerometer(:,3)./(sqrt(Accelerometer(:,1).^2 + Accelerometer(:,2).^2)));
 
 W_alpha = Gyroscope(:,1);
 W_beta = Gyroscope(:,2);
@@ -43,7 +47,7 @@ H = [1 0 0 0 0 0;
 z = [Ax Ay Az]';
 
 q = 0.00001;
-r = 50;
+r = 8500;
 p = 0;
 Q = eye(6).* q; %macierz kowariancji modelu
 R = eye(3).* r; %macierz kowariancji pomiarow
@@ -68,6 +72,9 @@ Alpha(k) = x_post(1);
 Beta(k) = x_post(2);
 Gamma(k) = x_post(3);
 end
+
+
+Kalman_filer_function(z(:,1),u(:,0),x_post, P_post);
 
 figure('Name', 'Filtr Kalmana');
 hold on;

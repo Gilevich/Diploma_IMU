@@ -11,7 +11,6 @@ function euler = quatern2euler(q)
 %
 %	Date          Author          Notes
 %	27/09/2011    SOH Madgwick    Initial release
-
     R(1,1,:) = 2.*q(:,1).^2-1+2.*q(:,2).^2;
     R(2,1,:) = 2.*(q(:,2).*q(:,3)-q(:,1).*q(:,4));
     R(3,1,:) = 2.*(q(:,2).*q(:,4)+q(:,1).*q(:,3));
