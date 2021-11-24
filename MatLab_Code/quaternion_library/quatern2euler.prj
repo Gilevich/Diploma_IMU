@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.coder" plugin-version="R2018b">
-  <configuration build-checksum="21531348" file="/home/gilevich/Documents/Diploma2/MatLab_Code/quaternion_library/quatern2euler.prj" location="/home/gilevich/Documents/Diploma2/MatLab_Code/quaternion_library" name="quatern2euler" target="target.unifiedcoder" target-name="MATLAB Coder">
+  <configuration build-checksum="1950656440" file="/home/gilevich/Documents/Diploma2/MatLab_Code/quaternion_library/quatern2euler.prj" location="/home/gilevich/Documents/Diploma2/MatLab_Code/quaternion_library" name="quatern2euler" target="target.unifiedcoder" target-name="MATLAB Coder">
     <profile key="profile.mex">
       <param.BuiltInstrumentedMex>false</param.BuiltInstrumentedMex>
       <param.RanInstrumentedMex>false</param.RanInstrumentedMex>
@@ -846,7 +846,7 @@
     <param.objective>option.objective.c</param.objective>
     <param.WorkflowStep>generateCode</param.WorkflowStep>
     <param.TestSnippets>
-      <item>Madgwick_filter</item>
+      <item>AlgoritmsOnRealData</item>
     </param.TestSnippets>
     <param.ExternalFcnMajority>column</param.ExternalFcnMajority>
     <param.UseGlobals>option.UseGlobals.No</param.UseGlobals>
@@ -865,7 +865,7 @@
     <param.AutoInferUnboundedSizeThreshold>2048</param.AutoInferUnboundedSizeThreshold>
     <param.EnableFixedPointStep>false</param.EnableFixedPointStep>
     <param.EnableScreener>true</param.EnableScreener>
-    <param.AnnotationChecksum>210790809</param.AnnotationChecksum>
+    <param.AnnotationChecksum>1981176212</param.AnnotationChecksum>
     <var.LegacyTarget />
     <var.MirrorOnOpen>false</var.MirrorOnOpen>
     <param.FixedPointEnabled>false</param.FixedPointEnabled>
@@ -874,12 +874,12 @@
     <param.unifiedParamStorage />
     <var.gc.lastOutputRoot>codegen/lib/quatern2euler</var.gc.lastOutputRoot>
     <var.gc.lastOutputType>C_CODE</var.gc.lastOutputType>
-    <var.gc.preBuildChecksum>3707060993</var.gc.preBuildChecksum>
+    <var.gc.preBuildChecksum>2851696237</var.gc.preBuildChecksum>
     <var.cfi.lastOutputRoot>codegen/mex/quatern2euler</var.cfi.lastOutputRoot>
-    <var.cfi.preBuildChecksum>2895506207</var.cfi.preBuildChecksum>
-    <var.lastCfiTestSnippet>Madgwick_filter</var.lastCfiTestSnippet>
+    <var.cfi.preBuildChecksum>3650733683</var.cfi.preBuildChecksum>
+    <var.lastCfiTestSnippet>AlgoritmsOnRealData</var.lastCfiTestSnippet>
     <var.outdatedOnRestore>false</var.outdatedOnRestore>
-    <var.lastUserSourceChecksum>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;checksum&gt;&lt;includedFiles&gt;&lt;file&gt;/home/gilevich/Documents/Diploma2/MatLab_Code/quaternion_library/quatern2euler.m&lt;/file&gt;&lt;/includedFiles&gt;&lt;value&gt;2210370227&lt;/value&gt;&lt;/checksum&gt;</var.lastUserSourceChecksum>
+    <var.lastUserSourceChecksum>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;checksum&gt;&lt;includedFiles&gt;&lt;file&gt;/home/gilevich/Documents/Diploma2/MatLab_Code/quaternion_library/quatern2euler.m&lt;/file&gt;&lt;/includedFiles&gt;&lt;value&gt;3966302478&lt;/value&gt;&lt;/checksum&gt;</var.lastUserSourceChecksum>
     <var.sourceSetState>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;sourceModel&gt;&lt;primarySourceFiles&gt;&lt;file&gt;/home/gilevich/Documents/Diploma2/MatLab_Code/quaternion_library/quatern2euler.m&lt;/file&gt;&lt;/primarySourceFiles&gt;&lt;fixedPointSourceFiles/&gt;&lt;fixedPointSourceRegistered&gt;false&lt;/fixedPointSourceRegistered&gt;&lt;fixedPointSourceSelected&gt;false&lt;/fixedPointSourceSelected&gt;&lt;/sourceModel&gt;</var.sourceSetState>
     <param.forceMexBuild>false</param.forceMexBuild>
     <param.NoDefaultJIT>false</param.NoDefaultJIT>
@@ -1091,12 +1091,11 @@
     </unset>
     <fileset.entrypoints>
       <file custom-data-expanded="false" value="${PROJECT_ROOT}/quatern2euler.m">
-        <Marker>1636315671688</Marker>
+        <Marker>1637607907432</Marker>
       </file>
     </fileset.entrypoints>
     <fileset.testbench>
-      <file>/home/gilevich/Documents/Diploma2/MatLab_Code/MadgwickAHRS.m</file>
-      <file>/home/gilevich/Documents/Diploma2/MatLab_Code/Madgwick_filter.m</file>
+      <file>/home/gilevich/Documents/Diploma2/MatLab_Code/AlgoritmsOnRealData.m</file>
     </fileset.testbench>
     <fileset.inputtypes>
       <file custom-data-expanded="false" value="${PROJECT_ROOT}/quatern2euler.m">

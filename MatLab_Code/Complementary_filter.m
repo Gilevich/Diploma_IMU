@@ -25,7 +25,7 @@ ylabel('Przyspieszenie (g)');
 title('Akcelerometr');
 hold off;
 
-K = 0.9998;
+K = 0.99998;
 
 Ax = (180/pi) * atan(Accelerometer(:,1)./(sqrt(Accelerometer(:,2).^2 + Accelerometer(:,3).^2)));
 Ay = (180/pi) * atan(Accelerometer(:,2)./(sqrt(Accelerometer(:,1).^2 + Accelerometer(:,3).^2)));
@@ -38,9 +38,9 @@ dt = 1/256;
 
 for t = 1:length(time)
     if t == 1
-        Alpha(t) = K * (Alpha(t) * dt) + (1-K) * Ax(t);
-        Beta(t) = K * (Beta(t) * dt) + (1-K) * Ay(t);
-        Gamma(t) = K * (Gamma(t) * dt) + (1-K) * Az(t);
+        Alpha(t) = K * (Gyroscope(t,1) * dt) + (1-K) * Ax(t);
+        Beta(t) = K * (Gyroscope(t,2) * dt) + (1-K) * Ay(t);
+        Gamma(t) = K * (Gyroscope(t,3) * dt) + (1-K) * Az(t);
     else
         Alpha(t) = K * (Alpha(t-1) + Gyroscope(t,1) * dt) + (1-K) * Ax(t);
         Beta(t) = K * (Beta(t-1) + Gyroscope(t,2) * dt) + (1-K) * Ay(t);
@@ -54,6 +54,7 @@ plot(time, Alpha, 'r');
 plot(time, Beta, 'g');
 plot(time, Gamma, 'b');
 title('Filtr Komplementarny');
+ylim([-110 110]);
 xlabel('Czas (s)');
 ylabel('Kąt (deg)');
 legend('Alpha', 'Beta', 'Gamma');

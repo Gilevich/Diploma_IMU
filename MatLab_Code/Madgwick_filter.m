@@ -28,7 +28,7 @@ title('Accelerometer');
 hold off;
 linkaxes(axis, 'x');
 
-AHRS = MadgwickAHRS('SamplePeriod', 1/256, 'Beta', 0.01);
+AHRS = MadgwickAHRS('SamplePeriod', 1/256, 'Beta', 0.033);
 
 quaternion = zeros(length(time), 4);
 for t = 1:length(time)
@@ -43,6 +43,7 @@ plot(time, euler(:,1), 'r');
 plot(time, euler(:,2), 'g');
 plot(time, euler(:,3), 'b');
 title('Filtr Madgwicka');
+ylim([-110 110]);
 xlabel('Czas (s)');
 ylabel('Kąt (deg)');
 legend('Alpha', 'Beta', 'Gamma');
