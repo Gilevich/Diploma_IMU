@@ -32,7 +32,7 @@ AHRS = MadgwickAHRS('SamplePeriod', 1/256, 'Beta', 0.033);
 
 quaternion = zeros(length(time), 4);
 for t = 1:length(time)
-    AHRS.UpdateIMU(Gyroscope(t,:) * (pi/180), Accelerometer(t,:));
+    AHRS.Update(Gyroscope(t,:) * (pi/180), Accelerometer(t,:), Magnetometer(t,:));
     quaternion(t, :) = AHRS.Quaternion;
 end
 
@@ -43,7 +43,6 @@ plot(time, euler(:,1), 'r');
 plot(time, euler(:,2), 'g');
 plot(time, euler(:,3), 'b');
 title('Filtr Madgwicka');
-ylim([-110 110]);
 xlabel('Czas (s)');
 ylabel('Kąt (deg)');
 legend('Alpha', 'Beta', 'Gamma');
