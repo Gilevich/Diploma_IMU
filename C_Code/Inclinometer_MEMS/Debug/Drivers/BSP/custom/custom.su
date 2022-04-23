@@ -1,0 +1,15 @@
+custom.c:84:9:BSP_GetVersion	4	static
+custom.c:96:9:BSP_LED_Init	16	static
+custom.c:111:9:BSP_LED_DeInit	40	static
+custom.c:134:9:BSP_LED_On	16	static
+custom.c:151:9:BSP_LED_Off	16	static
+custom.c:168:9:BSP_LED_Toggle	16	static
+custom.c:185:9:BSP_LED_GetState	16	static
+custom.c:193:13:LED_USER_GPIO_Init	40	static
+custom.c:224:9:BSP_COM_Init	24	static
+custom.c:263:9:BSP_COM_DeInit	24	static
+custom.c:300:26:MX_USART3_UART_Init	24	static
+custom.c:404:9:BSP_COM_SelectLogPort	16	static
+custom.c:416:6:__io_putchar	16	static
+custom.c:430:13:USART3_MspInit	48	static
+custom.c:482:13:USART3_MspDeInit	16	static

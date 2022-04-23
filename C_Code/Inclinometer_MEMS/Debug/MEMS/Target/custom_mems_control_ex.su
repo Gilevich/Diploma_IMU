@@ -1,0 +1,14 @@
+custom_mems_control_ex.c:31:6:BSP_SENSOR_ACC_Read_Register	16	static
+custom_mems_control_ex.c:52:6:BSP_SENSOR_GYR_Read_Register	16	static
+custom_mems_control_ex.c:67:6:BSP_SENSOR_MAG_Read_Register	16	static
+custom_mems_control_ex.c:82:6:BSP_SENSOR_PRESS_Read_Register	16	static
+custom_mems_control_ex.c:97:6:BSP_SENSOR_TEMP_Read_Register	16	static
+custom_mems_control_ex.c:118:6:BSP_SENSOR_HUM_Read_Register	16	static
+custom_mems_control_ex.c:133:6:BSP_SENSOR_ACC_Write_Register	16	static
+custom_mems_control_ex.c:154:6:BSP_SENSOR_GYR_Write_Register	16	static
+custom_mems_control_ex.c:169:6:BSP_SENSOR_MAG_Write_Register	16	static
+custom_mems_control_ex.c:184:6:BSP_SENSOR_PRESS_Write_Register	16	static
+custom_mems_control_ex.c:199:6:BSP_SENSOR_TEMP_Write_Register	16	static
+custom_mems_control_ex.c:220:6:BSP_SENSOR_HUM_Write_Register	16	static
+custom_mems_control_ex.c:235:6:BSP_SENSOR_ACC_GetOrientation	16	static
+custom_mems_control_ex.c:253:6:BSP_SENSOR_GYR_GetOrientation	16	static

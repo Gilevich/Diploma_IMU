@@ -1,0 +1,13 @@
+main.c:153:6:HAL_TIM_PeriodElapsedCallback	104	static
+main.c:216:5:main	16	static
+main.c:309:6:SystemClock_Config	216	static
+main.c:358:16:platform_write	40	static
+main.c:367:16:platform_read	40	static
+main.c:375:6:tx_com	16	static
+main.c:380:9:complementary_filter	56	static
+main.c:401:9:kalman_filter	168	static
+main.c:561:6:mult_matrix	56	static
+main.c:575:9:madgwick_filter	136	static
+main.c:661:7:invSqrt	32	static
+main.c:671:13:platform_delay	16	static
+main.c:681:6:Error_Handler	4	static,ignoring_inline_asm

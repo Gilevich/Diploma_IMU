@@ -1,0 +1,12 @@
+serial_protocol.c:41:5:ByteStuffCopyByte	24	static
+serial_protocol.c:72:5:ByteStuffCopy	24	static
+serial_protocol.c:93:5:ReverseByteStuffCopyByte	16	static
+serial_protocol.c:125:5:ReverseByteStuffCopyByte2	16	static
+serial_protocol.c:156:5:ReverseByteStuffCopy	24	static
+serial_protocol.c:215:6:CHK_ComputeAndAdd	24	static
+serial_protocol.c:234:5:CHK_CheckAndRemove	24	static
+serial_protocol.c:255:6:Serialize	32	static
+serial_protocol.c:272:10:Deserialize	24	static
+serial_protocol.c:293:6:Serialize_s32	32	static
+serial_protocol.c:313:9:Deserialize_s32	24	static
+serial_protocol.c:333:6:FloatToArray	16	static

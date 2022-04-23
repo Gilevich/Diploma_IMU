@@ -1,0 +1,11 @@
+motion_tl_manager.c:47:6:MotionTL_manager_init	16	static
+motion_tl_manager.c:60:6:MotionTL_manager_run	32	static
+motion_tl_manager.c:70:6:MotionTL_manager_getAngleMode	32	static
+motion_tl_manager.c:82:6:MotionTL_manager_setAngleMode	32	static
+motion_tl_manager.c:96:6:MotionTL_manager_get_version	16	static
+motion_tl_manager.c:106:6:MotionTL_manager_calibratePosition	1216	static
+motion_tl_manager.c:121:18:MotionTL_manager_getCalibrationValues	16	static
+motion_tl_manager.c:131:6:MotionTL_manager_setCalibrationValues	16	static
+motion_tl_manager.c:141:6:MotionTL_manager_getEstimatedMeasTime	16	static
+motion_tl_manager.c:152:6:MotionFX_LoadMagCalFromNVM	16	static
+motion_tl_manager.c:163:6:MotionFX_SaveMagCalInNVM	16	static

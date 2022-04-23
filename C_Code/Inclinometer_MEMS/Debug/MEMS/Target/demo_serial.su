@@ -1,0 +1,7 @@
+demo_serial.c:65:6:BUILD_REPLY_HEADER	16	static
+demo_serial.c:77:6:INIT_STREAMING_HEADER	16	static
+demo_serial.c:90:6:INIT_STREAMING_MSG	24	static
+demo_serial.c:110:5:HandleMSG	104	static
+demo_serial.c:467:6:RTC_DateRegulate	32	static
+demo_serial.c:490:6:RTC_TimeRegulate	40	static
+demo_serial.c:515:6:Get_PresentationString	136	static
